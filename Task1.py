@@ -4,7 +4,6 @@ def gravitation(m1, m2, r):
     G = 6.6743*math.pow(10,-11) 
     return G * m1 * m2 / math.pow(r, 2)
 
-
 m1 = 5.97600*math.pow(10,24)
 
 planet = input("Введите название планеты: ")
@@ -19,12 +18,9 @@ elif planet == "венера":
     m2 = 4.8685*math.pow(10,24)
     r = 1.082*math.pow(10,11)
 
-
-# Вычисление силы притяжения
 try:
     F = gravitation(m1, m2, r)
     print("Сила притяжения между Землей и", planet + ":", F, "Н")
 except:
     print("Планета не найдена")
 finally:    exit(0)
-# Вывод результата на экран
