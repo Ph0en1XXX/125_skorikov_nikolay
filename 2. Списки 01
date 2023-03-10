@@ -1,0 +1,11 @@
+import random
+
+list1 = [random.randint(0, 9999) for _ in range(random.randint(50, 100))]
+list2 = [random.randint(0, 9999) for _ in range(random.randint(50, 100))]
+print("1ый список:", list1)
+print("2ой список:", list2)
+set2 = set(list2)
+print("Элементы 1ого списка, которых нет во втором:")
+for element in list1:
+    if element not in set2:
+        print(element)
