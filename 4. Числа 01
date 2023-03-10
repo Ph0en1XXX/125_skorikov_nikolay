@@ -1,0 +1,14 @@
+import random
+
+def magic(x):
+    len = random.randint(5, 100)
+    seq = [random.randint(0, 9999) for i in range(len)]
+    sum1 = sum(seq)
+    print(sum1, "- сумма")
+    print(x,"- число x")
+    if sum1 % x == 0:
+        return True
+    else:
+        return False
+x = random.randint(0,9999)
+print(magic(x))
