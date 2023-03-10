@@ -1,0 +1,10 @@
+import random
+list1 = [random.randint(0, 9999) for i in range(random.randint(50, 100))]
+list2 = [random.randint(0, 9999) for i in range(random.randint(50, 100))]
+print("первый список:", list1)
+print("второй список:", list2)
+list3 = []
+for k in list1:
+    if k in list2:
+        list3.append(k)
+print("Общие элементы в двух списках:", list3)
